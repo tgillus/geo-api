@@ -1,0 +1,23 @@
+service: geo-api
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
+
+provider:
+  architecture: arm64
+  deploymentMethod: direct
+  memorySize: 1024
+  name: aws
+  region: us-east-1
+  runtime: nodejs18.x
+  stage: v1
+  versionFunctions: false
+
+functions:
+  location:
+    handler: lib/api/lambda.handler
+    events:
+      - http:
+          method: get
+          path: location

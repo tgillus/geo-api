@@ -1,0 +1,47 @@
+{
+  "name": "geo-api",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run clean && npm test && tsc",
+    "clean": "del-cli lib",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "prepare": "husky install",
+    "start": "npm run build && serverless offline start",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "author": "Tramaine L. Gillus",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "17.4.4",
+    "@commitlint/config-conventional": "17.4.4",
+    "@triviumsoftware/chemist": "2.0.5",
+    "@types/aws-lambda": "8.10.111",
+    "@types/lambda-log": "3.0.0",
+    "@types/node": "18.14.6",
+    "@typescript-eslint/eslint-plugin": "5.54.0",
+    "@typescript-eslint/parser": "5.54.0",
+    "@vitest/coverage-c8": "0.29.2",
+    "del-cli": "5.0.0",
+    "eslint": "8.35.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.2",
+    "prettier": "2.8.4",
+    "serverless": "3.28.1",
+    "serverless-dotenv-plugin": "4.0.2",
+    "serverless-offline": "12.0.4",
+    "tsx": "3.12.3",
+    "typescript": "4.9.5",
+    "vitest": "0.29.2"
+  },
+  "dependencies": {
+    "envsafe": "2.0.3",
+    "got": "12.6.0",
+    "lambda-log": "3.1.0",
+    "purifree-ts": "1.2.3",
+    "zod": "3.21.1"
+  }
+}
