@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { APIGatewayEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
 import { Probe } from '../application/probe/probe.js';
 import { Config } from '../infrastructure/config/config.js';
