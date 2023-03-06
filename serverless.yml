@@ -4,6 +4,10 @@ plugins:
   - serverless-dotenv-plugin
   - serverless-offline
 
+custom:
+  serverless-offline:
+    httpPort: 4000
+
 provider:
   architecture: arm64
   deploymentMethod: direct
