@@ -11,8 +11,10 @@ export const handler = async (
   event: APIGatewayEvent,
   context: Context
 ): Promise<APIGatewayProxyResult> => {
-  const config = new Config(env);
-  const api = Api.from(Probe.from(RequestContext.from(event, context)), config);
+  const api = Api.from(
+    Probe.from(RequestContext.from(event, context)),
+    new Config(env)
+  );
 
   return await api.handler(new Request(event));
 };
