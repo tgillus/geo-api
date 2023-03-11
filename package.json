@@ -21,14 +21,14 @@
     "@triviumsoftware/chemist": "2.0.5",
     "@types/aws-lambda": "8.10.111",
     "@types/lambda-log": "3.0.0",
-    "@types/node": "18.14.6",
+    "@types/node": "18.15.0",
     "@typescript-eslint/eslint-plugin": "5.54.1",
     "@typescript-eslint/parser": "5.54.1",
     "@vitest/coverage-c8": "0.29.2",
     "del-cli": "5.0.0",
-    "eslint": "8.35.0",
+    "eslint": "8.36.0",
     "husky": "8.0.3",
-    "lint-staged": "13.1.2",
+    "lint-staged": "13.2.0",
     "prettier": "2.8.4",
     "serverless": "3.28.1",
     "serverless-dotenv-plugin": "4.0.2",
@@ -43,6 +43,6 @@
     "got": "12.6.0",
     "lambda-log": "3.1.0",
     "purifree-ts": "1.2.3",
-    "zod": "3.21.3"
+    "zod": "3.21.4"
   }
 }
